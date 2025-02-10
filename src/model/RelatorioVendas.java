@@ -1,6 +1,6 @@
 package model;
 
-class RelatorioVendas extends RelatorioVendasSubject {
+public class RelatorioVendas extends RelatorioVendasSubject {
     private String estadoRelatorioVendas;
 
     public String getDadosVendas() {
@@ -9,6 +9,7 @@ class RelatorioVendas extends RelatorioVendasSubject {
 
 	public void setDadosVendas(String dadosVendas) {
 		this.estadoRelatorioVendas = dadosVendas;
+		notificarObservador();
 	}
 
 }
